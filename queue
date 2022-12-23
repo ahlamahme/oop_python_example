@@ -1,0 +1,25 @@
+class queue :
+    def __init__(self):
+       self.q =[]
+    def myinsrt(self,value):
+        self.q.append(value)
+    def mypop (self):
+      if queue.is_empty(self):
+          print("cant pop")
+      else:
+           self.q.pop(0)
+    def is_empty(self):
+        if len(self.q) < 1:
+            return True
+        return False
+
+    def display(self):
+        print(self.q)
+q = queue()
+q.myinsrt(1)
+q.myinsrt(2)
+q.mypop()
+q.mypop()
+q.display()
+q.mypop()
+q.mypop()
